@@ -55,6 +55,12 @@ st.write(iris.target_names)
 
 st.subheader('Prediction')
 st.write(iris.target_names[prediction])
+if iris.target_names[prediction] == 'setosa':
+    st.image(load_image('iris_setosa.jpg'))
+elif iris.target_names[prediction] == 'versicolor':
+    st.image(load_image('IRIS_VERSICOLOR.jpg'))
+elif iris.target_names[prediction] == 'virginica':
+    st.image(load_image('virginca.jpg'))
 #st.write(prediction)
 
 st.subheader('Prediction Probability')
