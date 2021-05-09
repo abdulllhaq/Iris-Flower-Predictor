@@ -19,7 +19,7 @@ This app detects the type of Iris flower based on Machine Learning!
 ''')
 st.write('---')
 
-st.title('Diabetes Detector')
+st.title('Iris Classifier and Predictor')
 st.sidebar.header('Input Features')
 
 def user_input_features():
