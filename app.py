@@ -70,10 +70,10 @@ species_type = st.radio('What is the Iris Species do you want to see?',('Setosa'
 
 if species_type == 'Setosa':
     st.text("Showing Setosa Species")
-    st.image(load_image('/main/iris_setosa.jpg'))
+    st.image(load_image('iris_setosa.jpg'))
 elif species_type == 'Versicolor':
     st.text("Showing Versicolor Species")
     st.image(load_image('IRIS_VERSICOLOR.jpg'))
 elif species_type == 'Virginica':
     st.text("Showing Virginica Species")
-    st.image(load_image('https://github.com/pranav-coder2005/iris_flower_predictor/blob/main/virginca.jpg'))
+    st.image(load_image('virginca.jpg'))
