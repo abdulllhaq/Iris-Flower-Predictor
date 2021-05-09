@@ -73,7 +73,7 @@ if species_type == 'Setosa':
     st.image(load_image('https://github.com/pranav-coder2005/iris_flower_predictor/blob/main/iris_setosa.jpg'))
 elif species_type == 'Versicolor':
     st.text("Showing Versicolor Species")
-    st.image(load_image(''))
+    st.image(load_image('https://github.com/pranav-coder2005/iris_flower_predictor/blob/main/IRIS_VERSICOLOR.jpg'))
 elif species_type == 'Virginica':
     st.text("Showing Virginica Species")
     st.image(load_image(''))
