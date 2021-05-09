@@ -55,12 +55,7 @@ st.write(iris.target_names)
 
 st.subheader('Prediction')
 st.write(iris.target_names[prediction])
-if iris.target_names[prediction] == 'setosa':
-    st.image(load_image('iris_setosa.jpg'))
-elif iris.target_names[prediction] == 'versicolor':
-    st.image(load_image('IRIS_VERSICOLOR.jpg'))
-elif iris.target_names[prediction] == 'virginica':
-    st.image(load_image('virginca.jpg'))
+
 #st.write(prediction)
 
 st.subheader('Prediction Probability')
@@ -71,7 +66,12 @@ st.write(prediction_proba)
 def load_image(img):
     im =Image.open(os.path.join(img))
     return im
-
+if iris.target_names[prediction] == 'setosa':
+    st.image(load_image('iris_setosa.jpg'))
+elif iris.target_names[prediction] == 'versicolor':
+    st.image(load_image('IRIS_VERSICOLOR.jpg'))
+elif iris.target_names[prediction] == 'virginica':
+    st.image(load_image('virginca.jpg'))
 # Select Image Type using Radio Button
 species_type = st.radio('What is the Iris Species do you want to see?',('Setosa','Versicolor','Virginica'))
 
