@@ -16,6 +16,7 @@ st.markdown('''
 # Iris Flower Species Predictor 
 This app detects the type of Iris flower based on Machine Learning!
 - App built by Pranav Sawant and Anshuman Shukla of Team Skillocity.
+- Dataset: R.A. Fisher "The Use of Multiple Measurements in Taxonomic Problems" and UC Irvine
 - Note: User inputs are taken from the sidebar. It is located at the top left of the page (arrow symbol). The values of the parameters can be changed from the sidebar.  
 ''')
 st.write('---')
