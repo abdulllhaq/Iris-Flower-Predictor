@@ -16,7 +16,8 @@ st.markdown('''
 # Iris Flower Species Predictor 
 This app detects the type of Iris flower based on Machine Learning!
 - App built by Pranav Sawant and Anshuman Shukla of Team Skillocity.
-- Dataset: R.A. Fisher "The Use of Multiple Measurements in Taxonomic Problems" 
+- Dataset credits: R.A. Fisher "The Use of Multiple Measurements in Taxonomic Problems" 
+- Dataset License: Open Data Commons Public Domain Dedication and License (PDDL)
 - Note: User inputs are taken from the sidebar. It is located at the top left of the page (arrow symbol). The values of the parameters can be changed from the sidebar.  
 ''')
 st.write('---')
@@ -80,3 +81,7 @@ elif iris.target_names[prediction] == 'virginica':
     st.text("Showing Virginica Species")
     st.image(load_image('virginca.jpg'))
 
+st.sidebar.("An article about this app: https://proskillocity.blogspot.com/2021/05/iris-classification-and-prediction.html")
+image = Image.open('')
+
+st.image(image, use_column_width=True)
