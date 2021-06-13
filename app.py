@@ -1,4 +1,5 @@
 #iris flower predictor
+#Keep it simple and straightforward
 #works perfectly
 
 import streamlit as st
@@ -11,7 +12,7 @@ import os
 
 
 
-
+#Usual opening
 st.markdown('''
 # Iris Flower Species Predictor 
 This app detects the type of Iris flower based on Machine Learning!
@@ -25,6 +26,7 @@ st.write('---')
 st.title('Iris Classifier and Predictor')
 st.sidebar.header('Input Features')
 
+#Inputs
 def user_input_features():
     sepal_length = st.sidebar.slider('Sepal length', 4.3, 7.9, 5.4)
     sepal_width = st.sidebar.slider('Sepal width', 2.0, 4.4, 3.4)
@@ -70,7 +72,7 @@ def load_image(img):
     return im
 
 
-
+#Prediction  with images
 if iris.target_names[prediction] == 'setosa':
     st.text("Showing Setosa Species")
     st.image(load_image('iris_setosa.jpg'))
