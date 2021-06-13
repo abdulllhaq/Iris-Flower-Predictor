@@ -2,6 +2,7 @@
 #Keep it simple and straightforward
 #works perfectly
 
+#import statements
 import streamlit as st
 import pandas as pd
 from sklearn import datasets
@@ -38,7 +39,7 @@ def user_input_features():
             'petal_width': petal_width}
     features = pd.DataFrame(data, index=[0])
     return features
-
+#start
 df = user_input_features()
 
 st.subheader('User Input parameters')
@@ -83,7 +84,8 @@ elif iris.target_names[prediction] == 'virginica':
     st.text("Showing Virginica Species")
     st.image(load_image('virginca.jpg'))
 
+#article
+
 st.sidebar.subheader("An article about this app: https://proskillocity.blogspot.com/2021/05/iris-classification-and-prediction.html")
 image = Image.open('killocity (3).png')
-
 st.image(image, use_column_width=True)
