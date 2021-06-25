@@ -19,6 +19,7 @@ st.markdown('''
 This app detects the type of Iris flower based on Machine Learning!
 - App built by Pranav Sawant and Anshuman Shukla of Team Skillocity.
 - Dataset credits: R.A. Fisher "The Use of Multiple Measurements in Taxonomic Problems" 
+- This dataset is also available on the UC Irvine Machine Learning Repository
 - Dataset License: Open Data Commons Public Domain Dedication and License (PDDL)
 - Note: User inputs are taken from the sidebar. It is located at the top left of the page (arrow symbol). The values of the parameters can be changed from the sidebar.  
 ''')
