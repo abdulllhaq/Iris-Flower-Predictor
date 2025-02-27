@@ -87,6 +87,3 @@ elif iris.target_names[prediction] == 'virginica':
 
 #article
 
-st.sidebar.subheader("An article about this app: https://proskillocity.blogspot.com/2021/05/iris-classification-and-prediction.html")
-image = Image.open('killocity (3).png')
-st.image(image, use_column_width=True)
